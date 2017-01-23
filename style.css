@@ -1,0 +1,123 @@
+h1 
+{
+    text-align: center;
+    font-family: headerText;
+}
+p
+{
+    text-align: center;
+    font-family: bodyText;    
+}
+h2
+{
+    font-family: bodyText;    
+    text-align: center;
+}
+h4
+{
+    font-family: bodyText;
+}
+@font-face {
+    font-family: bodyText;
+    src: url(DisposableDroidBB.ttf);
+    
+}
+@font-face {
+    font-family: headerText;
+    src: url(Impact_Label.ttf);
+    font-stretch: ultra-expanded;
+}
+body
+{
+    background: "bg.png";
+}
+.centerBordered 
+{
+     margin: auto;
+     width: 35%;
+     border: 6px solid gray;
+     padding: 10px;
+     background: white;
+}
+.center
+{
+    margin: auto;
+    width: 35%;
+}
+.centerText
+{
+    font-size: 20;
+}
+.sidebar 
+{
+    margin: left;
+    width: 10%;
+    border: 6px solid lightgray;
+    padding: 10px;
+    background: white;
+    
+}
+.headerTitle
+{
+    margin: auto;
+    font-size: 30;
+    background: white;
+}
+
+
+
+
+.button {
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  background-color: black;
+  font-size: 28px;
+  font-family: bodyText;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 9px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  font-family: bodyText;
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  
+}
+
+.button:hover span {
+  padding-right: 35px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.tab
+{
+    margin: auto;
+     width: 30%;
+     border: 6px solid gray;
+     padding: 10px;
+     background: white;
+     font-size: 20;
+    
+}
+.tab:active span
+{
+    opacity: 1;
+}
