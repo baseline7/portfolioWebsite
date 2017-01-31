@@ -4,12 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Patternizer V1.1</title>
-    <style>
-    /* a style sheet needs to be present for cursor hiding and custom cursors to work. */
-    </style>
-  </head>
-  <body>
-    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="768px" width="1366px"></canvas>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="../bg.png">
+<div class="centerBordered">
+    <div class="headerTitle">
+        <h1>Patternizer</h1>
+    </div>
+</div>
+<p></p>
+<div class="tab" id="musicTab">
+    <p><canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="540" width="900"></canvas></p>
     <script type='text/javascript'>
   var Module = {
     TOTAL_MEMORY: 268435456,
@@ -18,10 +23,21 @@
     dataUrl: "Release/Patternizer 1.1.data",
     codeUrl: "Release/Patternizer 1.1.js",
     memUrl: "Release/Patternizer 1.1.mem",
-    
   };
+  
 </script>
+<h2>Help</h2>
+    <p>Use the WASD or Arrow Keys to move your cursor.</p>
+    <p>Press Q to add a note if the selected slot is empty.</p>
+    <p>Press E to remove a note on the selected slot.</p>
+    <p>Press the spacebar to start/stop a song.</p>
+    <p>You can change the BPM (Beats Per Minute) using the slider above the arrow.</p>
+    <p>Press the square brackets [] to change the selected note's sample or pitch.<p>
+      <p></p>
+      <p>IMPORTANT! Make sure you have DESELECTED the BPM slider before moving your cursor, because Unity thinks you're trying to increase the BPM by moving left or right.</p>
+        <p>You can deselect an object by clicking another object in the game.</p>
 <script src="Release/UnityLoader.js"></script>
-
-  </body>
-</html>
+    <p>        <a href="../games.htm"><button class="button"><span>Go Back</span></button></a></p>
+</div>
+</body>
+</html>    
