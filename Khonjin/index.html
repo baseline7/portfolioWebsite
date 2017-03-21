@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Khonjin House Simulator</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="../bg.png">
+<div class="centerBordered">
+    <div class="headerTitle">
+        <h1>Khonjin House Simulator</h1>
+    </div>
+</div>
+<p></p>
+<div class="tab" id="musicTab">
+    <p><canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="540" width="900"></canvas></p>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    backgroundColor: "#222C36",
+    splashStyle: "Light",
+    dataUrl: "Release/Khonjin.data",
+    codeUrl: "Release/Khonjin.js",
+    asmUrl: "Release/Khonjin.asm.js",
+    memUrl: "Release/Khonjin.mem",
+  };
+</script>
+<h2>How To Play:</h2>
+    <p>Press literally any key on the keyboard to make Khonjin say "pep".</p>
+    <p>After a certain amount of screeches, Gino will bestow some of his wisdom upon you.</p>
+    <p>After even more screeches, Gino will completely lose his mind,</p>
+    <p>only to be rescued by Gay Spaghetti Chef.</p>
+<script src="Release/UnityLoader.js"></script>
+    <p>        <a href="../games.htm"><button class="button"><span>Go Back</span></button></a></p>
+</div>
+</body>
+</html>    
